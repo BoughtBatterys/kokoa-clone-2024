@@ -46,3 +46,7 @@ a{
 	color: inherit;
 	text-decoration: none;
 }
+
+.main-screen{
+    margin: 0px var(--horizontal-space);
+}

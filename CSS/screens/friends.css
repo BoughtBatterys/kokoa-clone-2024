@@ -3,9 +3,88 @@
     display: block;
     background-color: #fafafa;
     padding: 15px 0px;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: -15px;
 }
 
 #friends-display-link i{
     color: rgba(0,0,0,0.3);
+}
+
+.friends-screen__channel{
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top:15px;
+}
+
+.friends-screen__channel-header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color:rgba(0,0,0,0.5);
+}
+
+.recommended-friends{
+    padding: 25px 0px;
+    margin: 25px 0px 15px;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+}
+
+.recommended-friends__title{
+    font-size: 14px;
+    color:  rgba(0,0,0,0.5);
+}
+
+.recommended-friends span{
+    margin: 100px 0;
+    display: block;/*span은 inline이라 마진 상하를 못줌 그래서 블록화 해준것*/
+    text-align: center;
+    font-size: 18px;
+    color:  rgba(0,0,0,0.5);
+}
+
+.open-post{
+    display:flex;
+
+}
+
+.open-post__title{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.open-post__hashtags{
+    text-transform: uppercase;/*대문자로 만들어주기*/
+    opacity: 0.6;
+}
+
+.open-post__members{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.open-post__members img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.open-post__member-count{
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.open-post__members .divider{
+    width: 1px;
+    height: 10px;
+    margin: 0px 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.open-post__member-status{
+    color: #ffb0e0;
 }

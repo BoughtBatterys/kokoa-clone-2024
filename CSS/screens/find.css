@@ -1,0 +1,31 @@
+.find-icons{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.find-icons__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-icons__icon i{
+    font-size: 35px;
+    /*여기 폰트 사이즈는 그림 크기를 키우는데에 사용된 것이다.*/
+}
+
+.find-icons__icon span{
+    margin-top: 15px;
+}
+
+.open-chat__header{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.open-chat__header span{
+    opacity: 0.6;
+}
