@@ -6,7 +6,7 @@
     <title>Welcome to Kokoa Clone</title>
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
-<body>
+<body id="chat-screen">
     <div class="status-bar fixed">
         <div class="status-bar__column">
             <span>No Service</span>
@@ -22,22 +22,29 @@
             <i class="fas fa-battery-quarter fa-lg"></i>
             <!-- Lightning Icon-->
             <i class="fas fa-bolt"></i>
+
         </div>
     </div>
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">
-            If you have a Kakao Account, log in with your email or phone number.
-        </p>  
+    <header class="alt-header fixed">
+        <div class="alt-header__column">
+            <a href="#" onclick="history.back()">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Nico</h1>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search fa-2x"></i></span>
+            <span><i class="fas fa-bars fa-2x"></i></span>
+        </div>
     </header>
-    
-    <form action="friends.html" method="get" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number">
-        <input name="password" type="password" placeholder="Password">
-        
-        <input type="submit" value="Log In">
-        <a href ="#">Find Kakao Account or Password</a>
-    </form>
+
+    <main class="main-screen main-chat">
+        <div class="chat__timestamp">
+            Tuesday, June 30, 2020
+        </div>
+    </main>
 
     
     <script src="https://kit.fontawesome.com/e7c3d69002.js" crossorigin="anonymous"></script>
