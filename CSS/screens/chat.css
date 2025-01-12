@@ -41,6 +41,32 @@
     margin-bottom: 25px;
 }
 
+@keyframes Rolling {
+    0%{
+        transform:rotateX(0deg);
+    }
+    25%{
+        transform:rotateX(180deg);
+    }
+    50%{
+        transform:rotateX(360deg);
+    }
+    75%
+    {
+        transform:rotateX(180deg);
+    }
+    100%
+    {
+        transform:rotateX(0deg);
+
+    }
+}
+
+.chat__timestamp:hover{
+    animation: Rolling 2s ease-in-out infinite;
+
+}
+
 .message-row{
     width: 100%;
     display: flex;
@@ -52,6 +78,35 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+@keyframes Wiper {
+    0%{
+        transform:rotate(0deg)
+                scaleX(1.0);
+    }
+    25%{
+        transform:rotate(180deg)
+        scale(1.25);
+    }
+    50%{
+        transform:rotate(0deg)
+        scale(1.5);
+    }
+    75%
+    {
+        transform:rotate(180deg)
+        scale(1.25);
+    }
+    100%
+    {
+        transform:rotate(0deg)
+        scale(1.0);
+    }
+}
+
+.message-row:hover{
+    animation: Wiper 5s ease-in-out infinite;
 }
 
 .message__author{
@@ -126,6 +181,12 @@
     transition: all 0.3s ease-in-out;
 }
 
+.reply input:focus{
+    outline: none;
+}
+
+
+
 .reply__column{
     position: relative;
 }
@@ -133,7 +194,7 @@
 .reply__column:last-child > i,
 .reply__column:last-child button{
     position: absolute;
-    right: 3px;
+    right: 5px;
     top: 5px;
 }
 
@@ -176,7 +237,7 @@
 }
 
 .reply:focus-within input{
-    width: 98vw;
+    width: 95vw;
     transform: translateX(-13%) translateY(-80px);
 }
 

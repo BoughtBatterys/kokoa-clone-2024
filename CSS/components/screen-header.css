@@ -4,6 +4,7 @@
     align-items: center;
     padding: var(--horizontal-space);
     margin-bottom:15px;
+    position: relative;
 }
 
 .screen-header__title{
@@ -26,4 +27,10 @@
 
 .screen-header__icons .fa-cog:hover{
     animation: rotateCog 1s ease-in-out infinite;
+}
+
+.screen-header__notification{
+ position: absolute;
+ right: 20px;
+ top:47px;
 }
