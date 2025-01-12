@@ -15,3 +15,9 @@
     height: 8px;
     border-radius: 4px;
 }
+
+.badge-xs{
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+}

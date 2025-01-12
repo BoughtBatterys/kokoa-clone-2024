@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.alt-header-pt-sm{
+    padding-top: 25px;
+}
+
 .alt-header__title{
     font-size: 28px;
     font-weight: 600;
